@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dir handeling</title>
+</head>
+<style>
+    html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: darkcyan;
+    }
+
+    body {
+        width: 100px;
+        height: 200px;
+    }
+
+    #main form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: bisque;
+        width: 100px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    input {
+        margin: 10px;
+        border: 0px;
+        background-color: darkcyan;
+        color: white;
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <div id="main">
+        <form action="login.php" method="post">
+            <center><span style="color:darkcyan;">Login</span></center>
+            <input type="text" name="name" />
+            <input type="password" name="pass" maxlength="10" />
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+</html>
